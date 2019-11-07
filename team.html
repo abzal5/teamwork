@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-input{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-#area , #area2{
-  border-radius: 0%;
-  width: 200px;
-}
-body div{
-  display: flex;
-  flex-direction:column;
-  flex-shrink: 1;
-  justify-content: center;
-  align-items: center;
-  font-weight: lighter;
-  background-color: gray;
-}
-</style>
 
 </head>
 <body>
@@ -68,6 +48,7 @@ body div{
 	<tr>
 		<td><input type="button"value="pi" onclick="en(3.14)"></td>
 		<td><input type="button"value="e" onclick="en(2.7)"></td>
+		<td><input type="button"value="%" onclick="en(%)"></td>
 		
 										 
 	</tr>
@@ -127,11 +108,6 @@ body div{
 		document.getElementById('area').value=x.substring(0,x.length-1);
 
 		}
-		function si() {
-			var x = document.getElementById("area2").value;
-			var y = Math.sin(x);
-			document.getElementById("area2").value = y
-					      }
 
 
 	</script>
