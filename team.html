@@ -40,21 +40,30 @@
             	<td><input type="button" value="=" onclick="en('=')"></td>
             </tr>
 
-
-
-
-
-
-
-
-
 		</table>
-
-
-
-
-
-
 	</div>
+	<script>
+		
+		function en(san) {
+			document.getElementById('area').value=document.getElementById('area').value+san;
+		}
+
+		function equal(){
+		let x = document.getElementById('area').value; 
+		document.getElementById('area').value=eval(x);
+
+		}
+		function taza(){
+			document.getElementById('area').value="";
+	
+		}
+		function nazad(){
+		let x = document.getElementById('area').value; 
+		document.getElementById('area').value=x.substring(0,x.length-1);
+
+		}
+
+
+	</script>
 </body>
 </html>
