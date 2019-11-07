@@ -1,29 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-input{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
 
-
-#area , #area2{
-  border-radius: 0%;
-  width: 200px;
-
-}
-body {
-  display: flex;
-  flex-direction:column;
-  flex-shrink: 1;
-  justify-content: center;
-  align-items: center;
-  font-weight: lighter;
-  background-color: gray;
-}
-</style>
 </head>
 <body>
 	<div>
@@ -92,7 +70,26 @@ body {
 	   </div>
 	
 	<script>
+		function kor(){
+			let x = document.getElementById("area2").value;
+			let y =  Math.sqrt(x);
+			document.getElementById("area2").value= y;							   
+										   
+		 } 
+										   
+		function sq(){
+			let x = document.getElementById("area2").value;
+			let y = x*x;
+			document.getElementById("area2").value= y;							   
 		
+										   
+		}								   
+										   
+										   
+										   
+										   
+										   
+										   
 		function en(san) {
 			document.getElementById('area').value=document.getElementById('area').value+san;
 		}
@@ -111,11 +108,7 @@ body {
 
 		}
 
-		function si() {
-			var x = document.getElementById("area2").value;
-			var y = Math.sin(x);
-			document.getElementById("area2").value = y
-					      }
-</script>
+
+	</script>
 </body>
 </html>
